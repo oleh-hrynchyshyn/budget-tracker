@@ -18,7 +18,7 @@ const Singup = () => {
         .createUserWithEmailAndPassword(data.email, data.password)
         .then((res) => {
           setTimeout(() => {
-            window.location.href = "/login";
+            window.location.href = "/";
           }, 200);
         })
         .catch((err) => {
