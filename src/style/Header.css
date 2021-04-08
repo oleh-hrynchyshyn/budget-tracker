@@ -1,0 +1,72 @@
+.header {
+  padding: 10px 40px;
+  color: #ffffff;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #20232a;
+}
+
+.header__wrapper {
+  width: calc(100% - 80px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header__icon {
+  margin: 0 10px 0 0;
+  height: 25px;
+  filter: invert(1);
+}
+
+.header__name {
+  font-family: Felix Titling;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header__nav {
+  justify-self: center;
+  animation: anim 2000ms;
+}
+
+.header__link {
+  margin: 0 30px 0 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__exit {
+  margin: 0 0 0 30px;
+  padding: 0;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.header__link:last-of-type {
+  margin: 0;
+}
+
+.header__user {
+  justify-self: center;
+}
+
+.header__info {
+  display: flex;
+  text-align: right;
+}

@@ -1,0 +1,79 @@
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tracker {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  animation: anim 2000ms;
+}
+
+.react-calendar__tile--active {
+  color: white;
+  background: blue;
+}
+
+.tracker__block {
+  display: flex;
+  align-items: center;
+}
+
+.tracker__calendar {
+  max-width: 400px;
+}
+
+.tracker__form {
+  margin-left: 80px;
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+.tracker__show {
+  margin-top: 40px;
+}
+
+.tracker__button {
+  margin: 0 20px;
+}
+
+.tracker__button:last-of-type {
+  margin: 0;
+}
+
+.verification__form,
+.registration__form {
+  display: grid;
+  grid-row-gap: 30px;
+  justify-content: center;
+  padding: 100px;
+  color: #95c0f8;
+  background: #20232a;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.registration__form {
+  margin-top: 50px;
+}
+.verification__button {
+  border-radius: 10px;
+}
+.signIn {
+  margin-left: 30px;
+}
+
+.verification__input,
+.registration__input {
+  border-radius: 5px;
+}
